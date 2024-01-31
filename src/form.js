@@ -47,31 +47,59 @@ function addProject(obj) {
         const form = document.createElement('form');
         const input = document.createElement('input');
         const button = document.createElement('button');
+        const deleteBtn = document.createElement('button');
         const ul = document.createElement('ul');
 
         div.setAttribute('class', 'div__card');
         form.setAttribute('class', 'item__sub')
         input.setAttribute('name', 'title');
+        input.setAttribute('class', 'input__left');
+        button.setAttribute('class', 'btn__card');
+        
+
         button.textContent = "+";
+        deleteBtn.textContent = "Close";
         bTag.textContent = obj.title;
         bTag.setAttribute('class', 'card__heading');
+        div.appendChild(deleteBtn);
         div.appendChild(bTag);
         div.appendChild(div2);
         div.appendChild(ul);
         form.appendChild(input);
+        
         form.appendChild(button);
-        form.addEventListener('submit', (e) => {
+       
+        button.addEventListener('click', (e) => {
             e.preventDefault();
-            obj.items.push(new Item(e.target.elements['title'].value));
+            var titleValue = form.elements['title'].value;
+            obj.items.push(new Item(titleValue));
             console.log(obj.items) 
             ul.innerHTML = ''
+            console.log(e.target)
             for (let i = 0; i < obj.items.length; i += 1) {
-                
+                const delBtn = document.createElement('button');
+                delBtn.setAttribute('class', 'btn__card');
+                delBtn.textContent = '-'
                 const li = document.createElement('li');
+
                 li.textContent = obj.items[i].title;
+                // li.appendChild(delBtn);
                 ul.appendChild(li);
+
+                li.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    obj.items = obj.items.filter((item) => item.title !== e.target.textContent);
+                    e.target.remove();
+                });
             }
         });
+        
+        deleteBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+    
+                div.remove();
+            
+           });
 
         div2.appendChild(form);
         rightSide.appendChild(div);
