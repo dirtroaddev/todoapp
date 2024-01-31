@@ -37,12 +37,34 @@
     background-color: #C0C0C0;
     border-radius: 20px;
     font-size: 22px;
+    color: #4E2C73;
 }
 
 #right__side {
     width: 70%;
     height: 82vh;
+    display: flex;
+    
     background-color: #C0C0C0;
+}
+
+#btn__submit {
+    margin-top: 20px;
+}
+
+#input__form {
+    width:140px;
+    height: 38px;
+    border-radius: 12px;
+}
+
+#input__btn {
+    width:42px;
+    height: 40px;
+    border-radius: 12px;
+    background-color: #C0C0C0;
+    font-size: 18px;
+    color: #4E2C73;
 }
 
 /* HOME */
@@ -58,9 +80,23 @@
 }
 
 
-#div__card {
-    width: 200px;
-    height: 200px;
-    background-color: black;
-    color: white;
+.div__card {
+
+  width: 300px;
+  height: 200px;
+  margin-top: 4px;
+  margin-left: 20px;
+  border-radius: 5px;
+  background-color: #4E2C73;
+  box-shadow: 1px 2px 3px 4px rgba(12,12,12,0.2);
+}
+
+.card__heading {
+    font-size: 28px;
+    padding: 20px;
+    color: #C0C0C0;
+}
+
+.item__sub {
+    margin-left: 20px;
 }
