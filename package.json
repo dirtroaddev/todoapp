@@ -1,0 +1,25 @@
+{
+  "name": "todoist",
+  "version": "1.0.0",
+  "description": "A to do list for todoists",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dirtroaddev/todoapp.git"
+  },
+  "author": "DirtRoadDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dirtroaddev/todoapp/issues"
+  },
+  "homepage": "https://github.com/dirtroaddev/todoapp#readme",
+  "devDependencies": {
+    "css-loader": "^6.10.0",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.90.0",
+    "webpack-cli": "^5.1.4"
+  }
+}

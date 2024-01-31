@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poor+Story&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+#content {
+    
+    width: 98%;
+    height: 98vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 0 auto;
+}
+
+#left__side {
+   
+    width: 30%;
+    height: 82vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #4E2C73;
+    align-items: center;
+    border-radius: 10px 30px 20px 40px;
+}
+
+#content > #left__side > button {
+    width: 200px;
+    height: 60px;
+    background-color: #C0C0C0;
+    border-radius: 20px;
+    font-size: 22px;
+}
+
+#right__side {
+    width: 70%;
+    height: 82vh;
+    background-color: #C0C0C0;
+}
+
+/* HOME */
+
+.main__heading {
+    opacity: 0.4;
+    color: #C0C0C0;
+    font-family: 'Poor Story', system-ui;
+    font-size: 86px;
+    letter-spacing: 12px;
+    
+
+}
+
+
+#div__card {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    color: white;
+}
