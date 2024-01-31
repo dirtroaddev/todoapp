@@ -83,7 +83,7 @@ function addProject(obj) {
                 const li = document.createElement('li');
 
                 li.textContent = obj.items[i].title;
-                // li.appendChild(delBtn);
+                
                 ul.appendChild(li);
 
                 li.addEventListener('click', (e) => {
@@ -104,13 +104,6 @@ function addProject(obj) {
         div2.appendChild(form);
         rightSide.appendChild(div);
 
-        
-        
-        // document.querySelector('.item__sub').addEventListener('submit', (e) => {
-        //     e.preventDefault();
-        //     obj.items.push(new Item(e.target.elements['title'].value));
-        //     console.log(obj.items) 
-        // });
 
 
 }
